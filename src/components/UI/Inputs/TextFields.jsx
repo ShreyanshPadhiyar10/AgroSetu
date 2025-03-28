@@ -5,6 +5,7 @@ const InputField = ({ label, type = "text", placeholder }) => {
 
   return (
     <div className="">
+      <p>hello</p>
       <label className="text-gray-700 font-medium">{label}</label>
       <div className="relative flex items-center">
         <input
