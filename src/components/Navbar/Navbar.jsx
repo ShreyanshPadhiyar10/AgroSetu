@@ -1,8 +1,10 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
 import Button from '../UI/Buttons/Button'
 import favicon from '@/app/favicon.ico'
 import Image from 'next/image'
+import InputField from '../UI/Inputs/TextFields'
 
 function Navbar() {
   return (
@@ -21,12 +23,13 @@ function Navbar() {
           <div className='flex items-center gap-x-5'>
             <Button type='success'>Add Product</Button>
             <div className='rounded-full'>
-              <Image src={favicon} height={35} width={35} />
+              <Image src={favicon} alt='Profile' height={35} width={35} />
             </div>
           </div>
         </div>
       </div>
       <hr className='opacity-25'/>
+      <InputField label={"Name"} type='password' placeholder={"Enter your name"}></InputField>
     </>
   )
 }
