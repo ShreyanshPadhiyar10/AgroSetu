@@ -1,5 +1,12 @@
 @import "tailwindcss";
+@import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Khand:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-primary: "blue-500";
+  --color-darkGreen: #009F38;
+  --color-lightGreen: #00C846;
+}
 
 body {
   font-family: Inter, sans-serif;

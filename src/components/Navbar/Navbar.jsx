@@ -4,7 +4,7 @@ import React from 'react'
 import Button from '../UI/Buttons/Button'
 import favicon from '@/app/favicon.ico'
 import Image from 'next/image'
-import InputField from '../UI/Inputs/TextFields'
+import InputField from '../UI/Inputs/TextInput'
 
 function Navbar() {
   return (
@@ -29,7 +29,6 @@ function Navbar() {
         </div>
       </div>
       <hr className='opacity-25'/>
-      <InputField label={"Name"} type='password' placeholder={"Enter your name"}></InputField>
     </>
   )
 }
