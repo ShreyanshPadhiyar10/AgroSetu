@@ -2,9 +2,8 @@
 import Link from 'next/link'
 import React from 'react'
 import Button from '../UI/Buttons/Button'
-import favicon from '@/app/favicon.ico'
+import favicon from '/src/app/favicon.ico'
 import Image from 'next/image'
-import InputField from '../UI/Inputs/TextInput'
 
 function Navbar() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function RoleComponent({ iconClass, title, description, isSelected, onClick }) {
+function DescriptionCard({ iconClass, title, description, isSelected, onClick, className }) {
   return (
     <>
-      <div className={`p-4 rounded-xl border w-40 space-y-2 cursor-pointer transition-all ${isSelected ? "bg-green-100 border-green-500" : "bg-green-50 border-green-100 hover:border-green-400"}`}
+      <div className={`px-5 py-6 rounded-xl border w-40 space-y-2 cursor-pointer transition-all ${isSelected ? "bg-green-100 border-green-500" : "bg-green-50 border-green-100 hover:border-green-400"} ${className}`}
         onClick={onClick}
       >
         {iconClass && <i className={`${iconClass} text-lightGreen text-xl px-2.5 py-3 rounded-full bg-green-100`}></i>}
@@ -14,4 +14,4 @@ function RoleComponent({ iconClass, title, description, isSelected, onClick }) {
   )
 }
 
-export default RoleComponent
+export default DescriptionCard

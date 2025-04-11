@@ -1,7 +1,7 @@
 'use client'
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar"
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default function RootLayout({ children }) {
@@ -18,10 +18,8 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Navbar />
-        <div className="py-16">
-          <div className="max-w-max mx-auto px-10 pb-5">
-            {children}
-          </div>
+        <div className="py-16 w-full">
+          {children}
         </div>
       </body>
     </html>

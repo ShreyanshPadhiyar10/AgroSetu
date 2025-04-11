@@ -1,11 +1,10 @@
 'use client'
 import React, { useState } from 'react'
-import InputField from '../UI/Inputs/TextInput'
-import TextInput from '../UI/Inputs/TextInput'
-import PasswordInput from '../UI/Inputs/PasswordInput'
-import RoleComponent from './RoleComponent'
-import Button from '../UI/Buttons/Button'
+import TextInput from '../../UI/Inputs/TextInput'
+import PasswordInput from '../../UI/Inputs/PasswordInput'
+import Button from '../../UI/Buttons/Button'
 import Link from 'next/link'
+import DescriptionCard from '../../UI/DescriptionSection/DescriptionCard'
 
 const roles = [
   {
@@ -55,7 +54,7 @@ function Signup() {
         </div>
         <div className='flex gap-x-3'>
           {roles.map((role) => (
-            <RoleComponent
+            <DescriptionCard
               key={role.id}
               iconClass={role.icon}
               title={role.title}
